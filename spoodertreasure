@@ -1,0 +1,383 @@
+--Made by joga y joga
+
+-- Instances
+local GUI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local Name2 = Instance.new("TextLabel")
+local InstaKill = Instance.new("Frame")
+local Button = Instance.new("TextButton")
+local Info = Instance.new("TextLabel")
+local Options = Instance.new("Frame")
+local Monsters = Instance.new("TextButton")
+local Boss = Instance.new("TextButton")
+local AutoAttack = Instance.new("Frame")
+local Button_2 = Instance.new("TextButton")
+local Info_2 = Instance.new("TextLabel")
+local Options_2 = Instance.new("Frame")
+local Monsters_2 = Instance.new("TextButton")
+local Boss_2 = Instance.new("TextButton")
+local GodMode = Instance.new("Frame")
+local Button_3 = Instance.new("TextButton")
+local TpAll = Instance.new("Frame")
+local Button_4 = Instance.new("TextButton")
+--Properties
+repeat wait() until game.Players.LocalPlayer ~= nil
+GUI.Name = "GUI"
+GUI.Parent = game.CoreGui
+GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = GUI
+Main.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Main.BorderColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+Main.BorderSizePixel = 2
+Main.Position = UDim2.new(0, 10, 0.5, -100)
+Main.Size = UDim2.new(0, 125, 0, 200)
+
+Name.Name = "Name"
+Name.Parent = Main
+Name.BackgroundColor3 = Color3.new(0, 0, 0)
+Name.BackgroundTransparency = 0.80000001192093
+Name.BorderSizePixel = 0
+Name.Size = UDim2.new(1, 0, 0, 40)
+Name.Font = Enum.Font.Antique
+Name.Text = "Treasure Killer"
+Name.TextColor3 = Color3.new(1, 1, 1)
+Name.TextSize = 24
+Name.TextStrokeColor3 = Color3.new(0.882353, 0.882353, 0.882353)
+Name.TextStrokeTransparency = 0.89999997615814
+
+Name2.Name = "Name2"
+Name2.Parent = Name
+Name2.BackgroundColor3 = Color3.new(0, 0, 0)
+Name2.BackgroundTransparency = 0.89999997615814
+Name2.BorderSizePixel = 0
+Name2.Position = UDim2.new(0, 0, 1, 0)
+Name2.Size = UDim2.new(1, 0, 0, 15)
+Name2.Font = Enum.Font.Antique
+Name2.Text = "By Hacking101"
+Name2.TextColor3 = Color3.new(1, 1, 1)
+Name2.TextScaled = true
+Name2.TextSize = 24
+Name2.TextStrokeColor3 = Color3.new(0.882353, 0.882353, 0.882353)
+Name2.TextStrokeTransparency = 0.89999997615814
+Name2.TextWrapped = true
+
+InstaKill.Name = "InstaKill"
+InstaKill.Parent = Main
+InstaKill.BackgroundColor3 = Color3.new(1, 1, 1)
+InstaKill.BackgroundTransparency = 0.89999997615814
+InstaKill.Position = UDim2.new(0, 0, 0, 63)
+InstaKill.Size = UDim2.new(1, 0, 0, 30)
+
+Button.Name = "Button"
+Button.Parent = InstaKill
+Button.BackgroundColor3 = Color3.new(1, 1, 1)
+Button.BackgroundTransparency = 1
+Button.BorderSizePixel = 0
+Button.Size = UDim2.new(0.75, 0, 1, 0)
+Button.Font = Enum.Font.Antique
+Button.Text = "Instakill"
+Button.TextColor3 = Color3.new(0, 0, 0)
+Button.TextSize = 24
+
+Info.Name = "Info"
+Info.Parent = InstaKill
+Info.BackgroundColor3 = Color3.new(1, 1, 1)
+Info.BackgroundTransparency = 1
+Info.Position = UDim2.new(0.75, 0, 0, 0)
+Info.Size = UDim2.new(0.25, 0, 1, 0)
+Info.Font = Enum.Font.Code
+Info.Text = ">"
+Info.TextColor3 = Color3.new(0, 0, 0)
+Info.TextSize = 28
+
+Options.Name = "Options"
+Options.Parent = InstaKill
+Options.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Options.BorderSizePixel = 0
+Options.Position = UDim2.new(1, 1, 0, 0)
+Options.Size = UDim2.new(0, 100, 0, 63)
+Options.Visible = false
+
+Monsters.Name = "Monsters"
+Monsters.Parent = Options
+Monsters.BackgroundColor3 = Color3.new(1, 1, 1)
+Monsters.BackgroundTransparency = 1
+Monsters.BorderSizePixel = 0
+Monsters.Size = UDim2.new(1, 0, 0, 30)
+Monsters.Font = Enum.Font.Antique
+Monsters.Text = "Monsters"
+Monsters.TextColor3 = Color3.new(0, 0, 0)
+Monsters.TextSize = 24
+
+Boss.Name = "Boss"
+Boss.Parent = Options
+Boss.BackgroundColor3 = Color3.new(1, 1, 1)
+Boss.BackgroundTransparency = 1
+Boss.BorderSizePixel = 0
+Boss.Position = UDim2.new(0, 0, 0, 33)
+Boss.Size = UDim2.new(1, 0, 0, 30)
+Boss.Font = Enum.Font.Antique
+Boss.Text = "Bosses"
+Boss.TextColor3 = Color3.new(0, 0, 0)
+Boss.TextSize = 24
+
+AutoAttack.Name = "AutoAttack"
+AutoAttack.Parent = Main
+AutoAttack.BackgroundColor3 = Color3.new(1, 1, 1)
+AutoAttack.BackgroundTransparency = 0.89999997615814
+AutoAttack.Position = UDim2.new(0, 0, 0, 96)
+AutoAttack.Size = UDim2.new(1, 0, 0, 30)
+
+Button_2.Name = "Button"
+Button_2.Parent = AutoAttack
+Button_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Button_2.BackgroundTransparency = 1
+Button_2.BorderSizePixel = 0
+Button_2.Size = UDim2.new(0.75, 0, 1, 0)
+Button_2.Font = Enum.Font.Antique
+Button_2.Text = "AutoAttack"
+Button_2.TextColor3 = Color3.new(0, 0, 0)
+Button_2.TextSize = 24
+
+Info_2.Name = "Info"
+Info_2.Parent = AutoAttack
+Info_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Info_2.BackgroundTransparency = 1
+Info_2.Position = UDim2.new(0.75, 0, 0, 0)
+Info_2.Size = UDim2.new(0.25, 0, 1, 0)
+Info_2.Font = Enum.Font.Code
+Info_2.Text = ">"
+Info_2.TextColor3 = Color3.new(0, 0, 0)
+Info_2.TextSize = 28
+
+Options_2.Name = "Options"
+Options_2.Parent = AutoAttack
+Options_2.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Options_2.BorderSizePixel = 0
+Options_2.Position = UDim2.new(1, 1, 0, 0)
+Options_2.Size = UDim2.new(0, 100, 0, 63)
+Options_2.Visible = false
+
+Monsters_2.Name = "Monsters"
+Monsters_2.Parent = Options_2
+Monsters_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Monsters_2.BackgroundTransparency = 1
+Monsters_2.BorderSizePixel = 0
+Monsters_2.Size = UDim2.new(1, 0, 0, 30)
+Monsters_2.Font = Enum.Font.Antique
+Monsters_2.Text = "Weapon"
+Monsters_2.TextColor3 = Color3.new(0, 0, 0)
+Monsters_2.TextSize = 24
+
+Boss_2.Name = "Boss"
+Boss_2.Parent = Options_2
+Boss_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Boss_2.BackgroundTransparency = 1
+Boss_2.BorderSizePixel = 0
+Boss_2.Position = UDim2.new(0, 0, 0, 33)
+Boss_2.Size = UDim2.new(1, 0, 0, 30)
+Boss_2.Font = Enum.Font.Antique
+Boss_2.Text = "Ability"
+Boss_2.TextColor3 = Color3.new(0, 0, 0)
+Boss_2.TextSize = 24
+
+GodMode.Name = "GodMode"
+GodMode.Parent = Main
+GodMode.BackgroundColor3 = Color3.new(1, 1, 1)
+GodMode.BackgroundTransparency = 0.89999997615814
+GodMode.Position = UDim2.new(0, 0, 0, 129)
+GodMode.Size = UDim2.new(1, 0, 0, 30)
+
+Button_3.Name = "Button"
+Button_3.Parent = GodMode
+Button_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Button_3.BackgroundTransparency = 1
+Button_3.BorderSizePixel = 0
+Button_3.Size = UDim2.new(1, 0, 1, 0)
+Button_3.Font = Enum.Font.Antique
+Button_3.Text = "GodMode"
+Button_3.TextColor3 = Color3.new(0, 0, 0)
+Button_3.TextSize = 24
+
+TpAll.Name = "TpAll"
+TpAll.Parent = Main
+TpAll.BackgroundColor3 = Color3.new(1, 1, 1)
+TpAll.BackgroundTransparency = 0.89999997615814
+TpAll.Position = UDim2.new(0, 0, 0, 162)
+TpAll.Size = UDim2.new(1, 0, 0, 30)
+
+Button_4.Name = "Button"
+Button_4.Parent = TpAll
+Button_4.BackgroundColor3 = Color3.new(1, 1, 1)
+Button_4.BackgroundTransparency = 1
+Button_4.BorderSizePixel = 0
+Button_4.Size = UDim2.new(1, 0, 1, 0)
+Button_4.Font = Enum.Font.Antique
+Button_4.Text = "TP All"
+Button_4.TextColor3 = Color3.new(0, 0, 0)
+Button_4.TextSize = 24
+
+local tweenInfo = TweenInfo.new(0.1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+local TweenService = game:GetService("TweenService")
+--Selection Code
+local function Clicked(obj)
+	if obj.BackgroundTransparency > 0.8 then
+		TweenService:Create(obj, tweenInfo, {BackgroundTransparency = 0.8}):Play()
+	end
+	if obj.BackgroundTransparency >= 0.8 and obj.BackgroundTransparency <= 0.81 then
+		TweenService:Create(obj, tweenInfo, {BackgroundTransparency = 1}):Play()
+	end
+end
+
+--Code for InstaKill
+Button.MouseButton1Down:Connect(function()
+	Options.Visible = not Options.Visible
+end)
+local InstaKill_Ops = {}
+for i,v in pairs(Options:GetChildren()) do
+	InstaKill_Ops[v.Name] = false
+	v.MouseButton1Down:Connect(function()
+		Clicked(v)
+		InstaKill_Ops[v.Name] = not InstaKill_Ops[v.Name]
+		if InstaKill_Ops[v.Name] == true then
+			if Button.BackgroundTransparency > 0.9 then
+				Clicked(Button)
+			end
+		else
+			local count = 0
+			for i,v in pairs(InstaKill_Ops) do if v == false then count = count + 1 end end
+			if count == 2 then
+				Clicked(Button)
+			end
+		end
+	end)
+end
+
+--Code for AutoAttack
+Button_2.MouseButton1Down:Connect(function()
+	Options_2.Visible = not Options_2.Visible
+end)
+local AutoAttack_Ops = {}
+for i,v in pairs(Options_2:GetChildren()) do
+	AutoAttack_Ops[v.Name] = false
+	v.MouseButton1Down:Connect(function()
+		AutoAttack_Ops[v.Name] = not AutoAttack_Ops[v.Name]
+		Clicked(v)
+		if AutoAttack_Ops[v.Name] == true then
+			if Button_2.BackgroundTransparency > 0.9 then
+				Clicked(Button_2)
+			end
+		else
+			local count = 0
+			for i,v in pairs(AutoAttack_Ops) do if v == false then count = count + 1 end end
+			if count == 2 then
+				Clicked(Button_2)
+			end
+		end
+	end)
+end
+
+--Code for Godmode
+local GodMode = false
+Button_3.MouseButton1Down:Connect(function()
+	GodMode = not GodMode
+	Clicked(Button_3)
+end)
+
+local meta,oldmeta = getrawmetatable(game),{}
+setreadonly(meta,false)
+for i,v in next,meta do oldmeta[i] = v end
+meta.__namecall = function(...)
+	if GodMode == true then
+	    local args = {...}
+	    local go = true
+			if args[#args] == "Fire" then
+	            if tostring(args[1]) == "TargetPlayer" then go = false  end
+	        elseif args[#args] == "FireServer" then
+	            if tostring(args[1]) == "MonsterAttack" then go = false end
+	            if tostring(args[1]) == "MonsterTarget" then go = false end
+	        end
+	    if go == true then
+	        return oldmeta.__namecall(...)
+	    else
+	        return nil
+	    end
+	else
+		return oldmeta.__namecall(...)
+	end
+end
+
+--Code for TpAll
+Button_4.MouseButton1Down:Connect(function()
+	for i,v in pairs(workspace.DungeonFolder:GetChildren()) do
+		if v:FindFirstChild("Monsters") then
+			game.Players.LocalPlayer.SimulationRadius=10000000
+			for i,v in pairs(v.Monsters:GetChildren()) do
+				if v:FindFirstChildOfClass("Humanoid") then
+					v.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,2,0)
+				end
+			end
+		end
+	end
+end)
+
+--Code for InstaKill
+spawn(function()
+	while wait(0.25) do
+		game.Players.LocalPlayer.SimulationRadius= 10000000
+		for i,v in pairs(workspace.DungeonFolder:GetChildren()) do
+			if InstaKill_Ops["Monsters"] == true and v.Name ~= "BossRoom" then
+				if v:FindFirstChild("Monsters") then
+					for i,v in pairs(v.Monsters:GetChildren()) do
+						if v.Name ~= "Hippo" and v.Name ~= "Blaze" and v:FindFirstChildOfClass("Humanoid") then
+							v:FindFirstChildOfClass("Humanoid").Health = 0
+						end
+					end
+				end
+			end
+			if InstaKill_Ops["Boss"] == true and v.Name == "BossRoom" then
+				if v:FindFirstChild("Monsters") then
+					for i,v in pairs(v.Monsters:GetChildren()) do
+						if v:FindFirstChildOfClass("Humanoid") then
+							v:FindFirstChildOfClass("Humanoid").Health = 0
+						end
+					end
+				end
+			end
+		end
+		if workspace.DungeonFolder:FindFirstChild("BossRoom") ~= nil and workspace.DungeonFolder:FindFirstChild("BossRoom"):FindFirstChild("Monsters") and #workspace.DungeonFolder:FindFirstChild("BossRoom"):FindFirstChild("Monsters"):GetChildren() == 0 then
+			workspace.DungeonFolder:WaitForChild('EndRoom')
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.DungeonFolder.EndRoom.Finish.CFrame
+		end
+	end
+end)
+
+--Code for AutoAttack
+spawn(function()
+	while wait(0.15) do
+		if AutoAttack_Ops.Monsters == true then
+			game.ReplicatedStorage.Remotes.Attack:FireServer()
+		end
+		if AutoAttack_Ops.Boss == true then
+			game.ReplicatedStorage.Remotes.Ability:FireServer()
+		end
+	end
+end)
+
+local function ResetVel()
+	for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Velocity = Vector3.new(0,0,0)
+			v.RotVelocity = Vector3.new(0,0,0)
+		end
+	end
+end
+game.Players.LocalPlayer.Character.HumanoidRootPart.ChildAdded:Connect(function(obj) --Added by default cause fuck its annoying
+	if obj.Name == "BodyVelocity" then
+		obj:Destroy()
+		ResetVel()
+	end
+end)
